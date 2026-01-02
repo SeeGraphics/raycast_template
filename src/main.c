@@ -161,8 +161,10 @@ static void render_frame(Uint32 *pixels, double posX, double posY, double dirX,
   }
 }
 
-int main(void)
+int main(int argc, char *argv[])
 {
+  (void)argc;
+  (void)argv;
   if (SDL_Init(SDL_INIT_VIDEO) != 0)
   {
     fprintf(stderr, "SDL_Init Error: %s\n", SDL_GetError());
